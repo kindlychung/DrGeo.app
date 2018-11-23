@@ -1,0 +1,70 @@
++---------+
+| WARNING |
++---------+
+As the user sketch files are saved within the DrGeo.app directory
+structure, upgrading to a newer version may result in lost user files
+(the MySketches and MyExports folders contents).
+
+Before installing newer Dr. Geo version, the user must make a backup
+of the DrGeo.app/MySketches and DrGeo.app/MyExports folders.
+
+When installing newer version from the Dr. Geo ZIP archive, the user
+should request a merging installation. It depends on the Archive
+software used to install Dr.Geo. I am note sure yet how to overcome
+this issue.
+
++-----------------+
+| GNU/LINUX USERS |
++-----------------+
+To start Dr. Geo on GNU/Linux, double click on the file DrGeo.sh.
+Check the DrGeo.sh file has the execution flag set.
+
+Linux Dr. Geo is compiled for 32 bits host. To run it on your Linux 64 bits host, 
+you need to install 32 bits compatibility package. 
+This package will let you run any 32 bits compiled software on a 64 bits host. 
+
+Depending on the distribution, the package to install may have different name.
+
+	* Debian < Jessie, Ubuntu, LinuxMint <= 12.04 LTS:
+
+	sudo apt-get install ia32-libs-multiarch
+
+	* Debian >= Jessie, Ubuntu, LinuxMint >12.04 LTS:
+
+	Check you are indeed running a 64 bits system and you have access to 32 bits architecture as well:
+	
+	dpkg --print-architecture
+	-> amd64
+
+	dpkg --print-foreign-architectures
+	-> <empty>
+
+	Then add the 32 bits compatibility packages:
+	sudo dpkg --add-architecture i386
+	dpkg --print-foreign-architectures
+	->i386
+
+	sudo apt-get update
+	sudo apt-get dist-upgrade
+
+	Ensure the 32 bits version of Cairo is installed as well:
+	sudo apt-get install libcairo2:i386
+
++---------------+
+| WINDOWS USERS |
++---------------+
+To start Dr. Geo on Windows, double click on the file DrGeo.bat
+
++----------------+
+| MAC OS X USERS |
++----------------+
+Double click on the DrGeo.app application
+
+Documentation
+http://doc.drgeo.eu
+
+
+LICENSES
+Dr. Geo source code is covered by the GNU General Public License (GPL).
+Pharo virtual machine and image Smalltalk sources are covered by the MIT license.
+Fonts are convered by the GNU General Public License (GPL).

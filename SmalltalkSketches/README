@@ -1,0 +1,18 @@
+These Smalltalk code examples describe interactive sketches defined
+with the Smalltalk programming language.  
+
+With the Dr. Geo Smalltalk API, the users can fully describe a
+geometric construction and even much more as shown in the examples.
+
+To open and to execute these Smalltalk sketches:
+
+   1. From the Dr. Geo background menu, select Tools>Workspace.
+
+   2. In the Workspace title bar, clic the most right button and select
+   "Open..." in the drop down menu.
+
+   3. To execute the code, select all the code ([Ctrl]+a) and execute
+   it ([Ctrl]+d).
+
+To save a Smalltalk sketch, from the same Workspace menu select "Save
+as...". The code is saved in the folder "Contents/Resources".
